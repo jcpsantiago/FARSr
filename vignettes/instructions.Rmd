@@ -1,0 +1,35 @@
+---
+title: "Visualizing traffic accidents from FARS data"
+author: "João Santiago"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r}
+library(FARSr)
+```
+
+
+The US National Highway Traffic Safety Administration's Fatality Analysis Reporting System (FARS) is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes. This package will help you run some quick analyses and plot accidents on a map, for the county of your choosing.
+
+## Summarize number of accidents
+
+The *fars_summarize_years* function shows the number of accidents per month, per year. This is a quick way to see summarize the data and get a first impression. Make sure your data files are in your working directory, and have the format *accident_YEAR.csv.bz2*.
+```{r}
+fars_2013_2014 <- fars_summarize_years(c(2013, 2014))
+
+head(fars_2013_2014)
+```
+
+
+## Plot accidents on a map
+
+The main feature of the \code{FARSr} package is the ability to make a map of all accidents, for a period of time in a chosen county. For this you use the \code{fars_map_state} function, which takes as inputs the code for the county of interest and a year.
+ 
+```{r}
+fars_map_state(1, 2014)
+```

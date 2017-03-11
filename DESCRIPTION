@@ -1,11 +1,14 @@
 Package: FARSr
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Summarize and plot FARS data.
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: J Santiago
+Maintainer: J Santiago <joao.santiago@uni-tuebingen.de>
+Description: Create quick summaries and plot county-level data FARS on a map.
+    FARS stands for the US National Highway Traffic Safety Administration's 
+    Fatality Analysis Reporting System, which is a nationwide census providing 
+    the American public yearly data regarding fatal injuries suffered in motor 
+    vehicle traffic crashes.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

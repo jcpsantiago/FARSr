@@ -1,6 +1,6 @@
 Package: FARSr
 Type: Package
-Title: Quickly summarize and plot FARS data.
+Title: Quickly summarize and plot FARS data
 Version: 0.1.0
 Author: J Santiago
 Maintainer: J Santiago <joao.santiago@uni-tuebingen.de>
